@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio Website</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header class="header">
+<a href="#home" class="logo">Manoj
+<span>Kumar</span></a>
+<i class='bx bx-menu'id="menu-icon"></i>
+<nav class="navbar">
+<a href="#home" class="active">Home</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, It's <span>Manoj</span></h1>
+        <h3 class="text-animation">I'm a Web Developer <span></span></h3>
+        <p>A highly motivated and hardworking individual looking for a responsible role in an organization and meets tight deadlines with 
+            interpersonal skills, time management and multitasking abilities. A flexible hard worker ready to learn and contribute to team 
+            success. Having an interest to learn emerging technologies and fascinate to create practical applications.</p>
+        <div class="social-icons"> 
+            <a href="https://in.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://x.com/?lang=en-in"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <div class="btn-group">
+            <a href="#" class="btn">Hire</a>
+            <a href="#contact"
+            class="btn">Contact</a>
+        </div>
+    </div>
+        <div class="home-img">
+          <img src="img.jpg" alt="">
+        </div>
+    </div>    
+</section>
+<div id="education">
+    <div class="container">
+     <section class = "Edu">
+        <div class = "Edu-content">
+            <h1 class = "heading"><span>Education </span> </h1> 
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('B.Tech')">B.Tech</p>
+                <p class="tab-links" onclick="opentab('Inter')">Intermediate</p>
+                <p class="tab-links" onclick="opentab('SSC')">SSC</p>
+             </div> 
+
+             <div class="tab-contents active-tab" id="B.Tech">
+                <ul>
+                    <li><span>2021-2025</span> - Rajeev Gandhi Memorial College Of Engineering And Technology, Nandyal<br></li>
+                </ul>
+             </div>
+             <div class="tab-contents" id="Inter">
+                 <ul>
+                    <li><span>2019-2021</span> - Sri Chaitanya Boys Junior College, Vijayawada<br></li>
+                 </ul>
+             </div>
+             <div class="tab-contents" id="SSC">
+                <ul>
+                  <li><span>2019</span> - Sarvepalli VidyaNilayam High School, Kurnool<br></li>
+                </ul>
+            </div>
+        </div>
+      </section>
+    </div>
+</div>
+
+    <section class="skills" id="skills">
+
+            <h2 class="heading">Skills</h2>
+        
+               <div class="skills-container">
+        
+                   <div class="skill-box">
+        
+                       <div class="skill-info">
+        
+                           <h4>Programming Skills</h4>
+        
+                               <p>C, Python, HTML, CSS, JavaScript ,Verilog HDL</p>
+        
+                        </div>
+        
+                    </div>
+        
+        
+                   <div class="skill-box">
+        
+                         <div class="skill-info">
+            
+                            <h4>Tools</h4>
+            
+                              <p>MATLAB, PSPICE, LTSPICE</p>
+            
+                        </div>
+            
+                    </div>
+                        <div class="skill-box">
+        
+                             <div class="skill-info">
+                
+                                 <h4>Soft Skills</h4>
+                
+                                    <p>Communication, Teamwork, Leadership, Problem-solving, Adaptability</p>
+                
+                            </div>
+                
+                        </div>
+                          <div class="skill-box">
+        
+                               <div class="skill-info">
+                    
+                                    <h4>Word Processor Applications</h4>
+                    
+                                           <p>Microsoft Word ,Microsoft Excel, Power Point Presentation</p>
+                    
+                                </div>
+                    
+                            </div>
+                </div>
+        </section>
+
+<!---------------------Contact------------->
+    <div id="contact">
+        <section class="contact-form">
+            <h2 class="contact-me"> Contact <span>Me</span></h2>
+            <section class="contact-details">
+                <p> manojnani2929@gmail.com <br>
+                <br> +91 9866931735 </p>
+            </section>
+        </section>
+    </div>
+<footer class="footer">
+    <div class="social">
+            <a href="https://in.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://x.com/?lang=en-in"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+        <li>
+            <a href="#">About Me</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        @ Manoj Kumar | All Rights Reserved
+    </p>
+</footer>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents");
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script src="script.js"></script>
